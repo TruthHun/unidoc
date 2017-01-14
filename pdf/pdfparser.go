@@ -1032,7 +1032,7 @@ func (this *PdfParser) loadXrefs() (*PdfObjectDictionary, error) {
 
 	// Look for EOF marker and seek to its beginning.
 	// Define an offset position from the end of the file.
-	var offset int64 = 1000
+	var offset int64 = 10000
 	// Get the file size.
 	fSize, err := this.rs.Seek(0, os.SEEK_END)
 	if err != nil {
